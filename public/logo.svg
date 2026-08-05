@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF007F" />
+      <stop offset="100%" stop-color="#7B00FF" />
+    </linearGradient>
+  </defs>
+  <rect width="100" height="100" rx="20" fill="#0B0C10"/>
+  <!-- The }|{ symbol beautifully rendered -->
+  <text x="50" y="65" font-family="'Inter', sans-serif" font-size="52" font-weight="800" fill="url(#monoGrad)" text-anchor="middle">}|{</text>
+</svg>
