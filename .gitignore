@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.netlify/
+test_*.py
+test_db*
+test_*.js
+*.log

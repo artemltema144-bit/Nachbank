@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar in Monobank style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0C10;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2833;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF007F;
+}
+
+/* Glassmorphism card utility */
+.glass-card {
+  background: rgba(31, 40, 51, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mono-gradient-pink {
+  background: linear-gradient(135deg, #FF007F 0%, #7B00FF 100%);
+}
+
+.mono-gradient-blue {
+  background: linear-gradient(135deg, #00F0FF 0%, #004BFF 100%);
+}
+
+.mono-gradient-green {
+  background: linear-gradient(135deg, #39FF14 0%, #007F1E 100%);
+}
+
+.mono-gradient-yellow {
+  background: linear-gradient(135deg, #FFD700 0%, #FF8C00 100%);
+}
+
+/* Card flip animation style */
+.flip-card {
+  perspective: 1000px;
+}
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
